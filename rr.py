@@ -23,7 +23,7 @@ for (time,count,remian) in (0,0,10):
          time+=quantum+time
     if(remaining_time[count]==0 and flag==1):
          remain=remain-1
-         print "p \t  d    d" ,count+1,time-arrival_timecount, time-arrival_time[count]-burst_time[count]
+         print "p[",i,"]: ", "\t",  arrival_time[i], "\t\t\t" , burst_time[i] ,count+1,time-arrival_timecount, time-arrival_time[count]-burst_time[count]
          waiting_time+=time-arrival_time[count]-burst_time[count]
          turnaround_time+=time-arrival_time[count]
          flag=0
